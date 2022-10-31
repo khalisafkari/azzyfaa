@@ -5,17 +5,17 @@ import './App.css';
 const Page = () => {
   return (
     <div>
-         <Link to={'/'}>
-            <button type='button'>
-              <span role="img" aria-label="folded hands">
-                🙏
-              </span>
-              page
-            </button>
-        </Link>
+      <Link to="/">
+        <button type="button">
+          <span role="img" aria-label="folded hands">
+            🙏
+          </span>
+          page
+        </button>
+      </Link>
     </div>
-  )
-}
+  );
+};
 
 const Hello = () => {
   return (
@@ -37,16 +37,15 @@ const Hello = () => {
             Read our docs
           </button>
         </a>
-        <Link to={'/page'}>
-            <button type='button'>
-              <span role="img" aria-label="folded hands">
-                🙏
-              </span>
-              page
-            </button>
+        <Link to="/page">
+          <button type="button">
+            <span role="img" aria-label="folded hands">
+              🙏
+            </span>
+            page
+          </button>
         </Link>
         <a
-          
           href="https://github.com/sponsors/electron-react-boilerplate"
           target="_blank"
           rel="noreferrer"
@@ -68,7 +67,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Hello />} />
-        <Route path='/page' element={<Page />} />
+        <Route path="/page" element={<Page />} />
       </Routes>
     </Router>
   );
